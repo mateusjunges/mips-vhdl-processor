@@ -27,7 +27,7 @@ end control;
 architecture beh of control is
 	begin
 
-	-- The consequences of vhdl syntax 
+
 	--				           R-types				        addi				           beq                            bne                            jump                           lw                               sw
 	reg_dest <= 	'1' when opcode="000000"  else '0' when opcode="001000"  else '0' when opcode="000100"  else '0' when opcode="000101"  else '0' when opcode="000010"  else '0' when opcode="100011"  else '0' when opcode="101011"  else '0';
 	jump <=			'0' when opcode="000000"  else '0' when opcode="001000"  else '0' when opcode="000100"  else '0' when opcode="000101"  else '1' when opcode="000010"  else '0' when opcode="100011"  else '0' when opcode="101011"  else '0';
