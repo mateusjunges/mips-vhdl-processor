@@ -1,16 +1,13 @@
 ------------------------------------------------------
--- Instruction Memory Block
+-- Bloco de instruções da memória
 -- 
--- Contains all the instructions to be run.
+-- Contém todas as intruções que serão executadas.
 -- 
--- Memory is kept in rows of 32 bits to represent 32-bit
--- registers.
 -- 
--- This component initially reads from the file
--- 'instructions.txt' and saves it into a 2d array.
+-- Inicialmente este componente le o arquivo 'instructions.txt'
+-- e salva ele em um segundo array
 -- 
--- This component takes in a 32-bit address and returns
--- the instruction at that address.
+-- Pega um endereço de 32bits e retorna a instrução daquele endereço 
 ------------------------------------------------------
 
 library IEEE;
